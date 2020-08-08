@@ -10,7 +10,6 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
-
 <body>
     <div class="header">
         <div class="wrap">
@@ -44,7 +43,7 @@
             <div class="container">
                 <div class="content-box-left-bootomgrid lastgrid">
                     <h3>RESERVA ESTA HABITACI&Oacute;N</h3>
-                    <img src="images/examp-room.jpg" alt="" class="">
+                    <img src="images/examp-room.jpg" alt="room-image" id="room-image">
                 </div>
                 <form class="_form-booking">
                     <h3 class="form-title">RESERVA ESTA HABITACI&Oacute;N</h3>
@@ -115,6 +114,12 @@
             </div>
         </header>
     </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const _src = params.get('imgsrc')
+        const roomImage = document.querySelector('#room-image');
+        roomImage.src = (_src === null ? "images/examp-room.jpg" : _src); 
+    </script>
     <script src="js/sbm-form.js" type="text/javascript"></script>
 </body>
 
