@@ -32,6 +32,9 @@ body{
 	background: url(../images/box1.png) repeat-x;
 }
 .header-top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	padding: 41px 0 30px 0;
 }
 
