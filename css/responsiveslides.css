@@ -1,12 +1,10 @@
-
-
 .rslides {
   position: relative;
   list-style: none;
   overflow: hidden;
   padding: 0;
   margin: 0;
-  }
+}
 
 .rslides li {
   -webkit-backface-visibility: hidden;
@@ -15,19 +13,19 @@
   width: 100%;
   left: 0;
   top: 0;
-  }
+}
 
 .rslides li:first-child {
   position: relative;
   display: block;
   float: left;
-  }
+}
 
 .rslides img {
- 	display: block;
-	height: auto;
-	float: left;
-	border: 0;
-	width: 100%;
-	border-top: 10px solid #454545;
-  }
+  display: block;
+  height: auto;
+  float: left;
+  border: 0;
+  width: 100%;
+  border-top: 10px solid #454545;
+}

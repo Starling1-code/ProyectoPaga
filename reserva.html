@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Hotel Website | Gallery </title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="css/reserva-form.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="wrap">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo2.png" title="logo" /></a>
+                </div>
+                <div class="contact-info">
+                    <p class="">Nombre : <a href="#">###</a></p>
+                    <p class="">Apellido : <a href="#">###</a></p>
+                    <p class="">Matricula:<a href="">###</a></p>
+                </div>
+                <div class="clear"> </div>
+            </div>
+        </div>
+        <header>
+            <nav>
+                <div class="icono" id="icono">
+                    <span>&#9776;</span>
+                </div>
+                <div class="enlaces uno" id="enlaces">
+
+                    <a href="index.html" class="active">Inicio</a>
+                    <a href="Servicios.html">Servicio</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="galeria.html">galeria</a>
+                    <a href="Nosotros.html">Nosotros</a>
+                </div>
+            </nav>
+            <div class="clear"> </div>
+            <div class="container">
+                <div class="content-box-left-bootomgrid lastgrid">
+                    <h3>RESERVA ESTA HABITACI&Oacute;N</h3>
+                    <img src="images/examp-room.jpg" alt="" class="">
+                </div>
+                <form class="_form-booking">
+                    <input type="hidden" data-csrf="true" name="_room_token">
+                    <dl class="group required">
+                        <dt class="label">
+                            <label for="user_name">Nombre</label>
+                        </dt>
+                        <dd>
+                            <input name="user[name]" autocapitalize="off" autofocus required class="form-input"
+                                type="text" id="user_name" autocomplete="off" spellcheck="false">
+                            <small aria-labelledby="err[user_name]" class="error-span"></small>
+                        </dd>
+                    </dl>
+                    <dl class="group required">
+                        <dt class="label">
+                            <label for="user_lastname">Apellido</label>
+                        </dt>
+                        <dd>
+                            <input name="user[lastname]" autocapitalize="off" required class="form-input" type="text"
+                                id="user_lastname" autocomplete="off" spellcheck="false">
+                            <small aria-labelledby="err[user_lastname]" class="error-span"></small>
+                        </dd>
+                    </dl>
+                    <dl class="group required">
+                        <dt class="label">
+                            <label for="user_mail">Correo Electr&oacute;nico</label>
+                        </dt>
+                        <dd>
+                            <input name="user[mail]" autocapitalize="off" required class="form-input" type="text"
+                                id="user_mail" autocomplete="off" spellcheck="false" />
+                            <img src="images/ajax-loader.gif" class="preloader" id="preloader" alt="preloader-gif">
+                            <small id="mail-feedback" aria-labelledby="err[user_mail]" class="error-span"></small>
+                        </dd>
+                    </dl>
+                    <dl class="group required">
+                        <dt class="label">
+                            <label for="booking_type">Tipo</label>
+                        </dt>
+                        <dd>
+                            <select name="booking[type]" autocapitalize="off" required class="form-input form-select"
+                                id="booking_type" autocomplete="off" spellcheck="false">
+                                <option disabled="disabled" selected="selected" aria-describedby="default" value="">
+                                    Seleccione una opci&oacute;n</option>
+                                <option value="Huesped">Huesped</option>
+                                <option value="Invitado">Invitado</option>
+                            </select>
+                            <small aria-labelledby="err[booking_type]" class="error-span"></small>
+                        </dd>
+                    </dl>
+                    <dl class="group">
+                        <dd>
+                        <dt class="label"><label>A&ntilde;adiduras (Extras)</label></dt>
+                        <div class="form-cbx-container">
+                            <label class="label cbx" for="cbx_aire">
+                                <input type="checkbox" id="cbx_aire" class="form-cbx" value="Aire" />
+                                <span>Aire</span>
+                            </label>
+                            <label class="label cbx" for="cbx_balcon">
+                                <input type="checkbox" id="cbx_balcon" class="form-cbx" value="Balcon" />
+                                <span>Balc&oacute;n</span>
+                            </label>
+                        </div>
+                        </dd>
+                    </dl>
+                    <input type="submit" class="form-btn" value="Reservar">
+                </form>
+            </div>
+        </header>
+    </div>
+    <script src="js/reserva-form.js" type="text/javascript"></script>
+</body>
+
+</html>
