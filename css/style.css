@@ -28,9 +28,7 @@ body{
 	width:80%;
 	margin:0 auto;
 }
-.header{
-	background: url(../images/box1.png) repeat-x;
-}
+
 .header-top{
 	display: flex;
 	align-items: center;
@@ -38,6 +36,15 @@ body{
 	padding: 41px 0 30px 0;
 }
 
+.header > .wrap{
+	margin: 0;
+    width: 100% !important;
+	background: url(../images/box1.png) repeat-x;
+}
+
+._room{
+	cursor: pointer;
+}
 
 .contact-info{
 	float:right;
