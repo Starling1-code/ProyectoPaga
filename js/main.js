@@ -14,7 +14,8 @@ boton.addEventListener("click",function(){
 })
 
 window.addEventListener('resize', function(){
-    if(screen.width > 750){
+    console.log(screen.width);
+    if(screen.width > 780){
         contador=0;
         enlaces.classList.remove('dos');
         enlaces.className = ('enlaces uno');
